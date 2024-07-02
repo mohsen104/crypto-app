@@ -1,0 +1,14 @@
+.box {
+    margin-bottom: 25px;
+}
+
+.title {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #9fa6b7;
+    font-size: 1rem;
+}

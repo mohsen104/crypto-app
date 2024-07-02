@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+    min-height: fit-content;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead {
+    border-bottom: 1px solid #22262e;
+    margin-bottom: 20px;
+}
+
+.table th {
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 10px 0;
+    color: #9fa6b7;
+}
+
+.table tbody tr {
+    height: 80px;
+    border-bottom: 1px solid #22262e;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.table tbody tr:nth-last-child(1) {
+    border-bottom: none;
+}
+
+.symbol {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.symbol img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.symbol span {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+td span {
+    color: #9fa6b7;
+}
+
+.success {
+    color: #54bc7c;
+}
+
+.error {
+    color: #d33636;
+}
+
+@media (max-width:600px) {
+    .table {
+        display: block;
+        overflow-x: scroll;
+    }
+
+    .table td,
+    .table th {
+        padding: 0 10px;
+    }
+}
