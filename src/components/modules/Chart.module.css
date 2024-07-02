@@ -8,7 +8,9 @@
 }
 
 .cross {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: end;
     font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
@@ -39,7 +41,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 10px 30px;
+    margin: 0 0 30px;
 }
 
 .graph {
@@ -64,11 +66,17 @@
 }
 
 .types {
+    width: fit-content;
+    margin: 0 auto;
     margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .types button {
-    margin: 10px 20px;
+    width: 120px;
     background-color: #18181cdb;
     border: 1px solid #3874ff;
     color: #3874ff;
@@ -108,10 +116,10 @@
 
 @media (max-width:600px) {
     .chart {
-        width: 400px;
+        width: 320px;
     }
 
     .graph {
-        width: 340px;
+        width: 280px;
     }
 }

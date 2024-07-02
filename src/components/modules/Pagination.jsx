@@ -24,17 +24,25 @@ export default function Pagination({ page, setPage }) {
       >
         Previous
       </button>
-      <p className={page === 1 ? styles.selected : null}>1</p>
-      <p className={page === 2 ? styles.selected : null}>2</p>
-      {page > 2 && page < 9 && (
+      <p
+        className={page === 1 ? styles.selected : null}
+        onClick={() => setPage((page) => (page = 1))}
+      >
+        1
+      </p>
+      {page >= 2 && page <= 9 && (
         <>
           <span>...</span>
           <p className={styles.selected}>{page}</p>
         </>
       )}
       <span>...</span>
-      <p className={page === 9 ? styles.selected : null}>9</p>
-      <p className={page === 10 ? styles.selected : null}>10</p>
+      <p
+        className={page === 10 ? styles.selected : null}
+        onClick={() => setPage((page) => (page = 10))}
+      >
+        10
+      </p>
       <button
         className={page === 10 ? styles.disabled : null}
         onClick={nextHandler}
