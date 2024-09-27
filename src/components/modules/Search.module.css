@@ -43,6 +43,8 @@
     background-color: #18181c;
     border: 2px solid #22262e;
     padding: 20px;
+    max-height: 400px;
+    overflow-y: scroll;
 }
 
 ::-webkit-scrollbar {
@@ -51,6 +53,7 @@
 }
 
 .searchResult li {
+    cursor: pointer;
     list-style: none;
     display: flex;
     margin-bottom: 15px;
